@@ -1,5 +1,4 @@
 import os
-from time import sleep
 
 #--------Funcion para resolver sistemas de ecuaciones 2x2---------
 def solucion_sistema_2x2(a1,a2,b1,b2,c1,c2):
@@ -69,7 +68,7 @@ def main():
                 d3 = float(input("d3 = "))
                 x,y,z = solucion_sistema_3x3(a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3)
                 if x: print("\nSolucion: \nx = ",x,"\ny = ",y,"\nz = ",z)
-            sleep(5)
+            os.system('pause')
     except:
         print("Solo Funciona con numeros reales... Intenta denuevo")
         main()
